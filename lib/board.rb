@@ -18,6 +18,15 @@ class Board
     string
   end
 
+  def row_string
+    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    letters[0..(@width-1)]
+  end
+
+  def turn_string
+    p turn_string = "#{row_string}\n\n#{board_string}"
+  end
+
   private
 
   def create_empty_columns
